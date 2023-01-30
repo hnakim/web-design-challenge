@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Weather Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
@@ -18,12 +18,86 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="col-lg-5">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Weather Dashboard</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="visualizations/temp.html">Latitude vs. Max Temperature</a></li>
+                <li><a href="visualizations/humidity.html">Latitude vs. Humidity</a></li>
+                <li><a href="visualizations/cloudiness.html">Latitude vs. Cloudiness</a></li>
+                <li><a href="visualizations/wind.html">Latitude vs. Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
+    <div class ="container">
+      <div class ="row">
+        <div class ="col-md-6">
+          <!-- <div class="box"> -->
+            <h1>Summary: Latitude vs. X</h1>
+            <hr>
+            <a href="visualizations/temp.html">
+            <img src="assets/images/Fig1.png" alt="temp" class="img-thumbnail" width="65%">
+            </a>
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, 
+            as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          </div>
+        <!-- </div> -->
+
           <!-- Start of Visualizations imageNav Area -->
+          <div class="col-md-6">
+            <div class="box">
+              <h1>Visualizations</h1>
+              <hr>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <a href="visualizations/temp.html">
+                    <img class="panel" src="assets/images/Fig1.png" alt="temp" class="img-thumbnail" width="50%">                  
+                    </a>
+                  </div>
+
+                  <div class="col-md-6">
+                  <a href="visualizations/humidity.html">
+                  <img class="panel" src="assets/images/Fig2.png" alt="humidity" class="img-thumbnail" width="50%" style="display:block">                  
+                  </a>
+                  </div>
+                </div>
+                  
+                <div class="row">
+                  <div class="col-md-6">
+                    <a href="visualizations/cloudiness.html">
+                    <img class="panel" src="assets/images/Fig3.png" alt="cloudiness" class="img-thumbnail" width="50%">                  
+                    </a>
+                  </div>
+                      
+                  <div class="col-md-6">
+                    <a href="visualizations/wind.html">
+                    <img class="panel" src="assets/images/Fig4.png" alt="wind" class="img-thumbnail" width="50%">                  
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           <!-- End of the Visualizations imageNav Area -->
-    <!-- End of container -->
+        </div>
+      <!-- End of container -->
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
