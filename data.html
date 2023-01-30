@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
+    <title>data</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
@@ -18,9 +19,41 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="col-lg-5">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Weather Dashboard</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="visualizations/temp.html">Latitude vs. Max Temperature</a></li>
+                <li><a href="visualizations/humidity.html">Latitude vs. Humidity</a></li>
+                <li><a href="visualizations/cloudiness.html">Latitude vs. Cloudiness</a></li>
+                <li><a href="visualizations/wind.html">Latitude vs. Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- End of navbar -->
-
+    
     <!-- Start of container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Data</h2>
+          <p>The following table includes all of the data used for plotting during this project.</p>
+        </div>
+      </div>
+          <hr>
+    
+    </div>
     <!-- End of container -->
 
     <!-- jQuery CDN -->
