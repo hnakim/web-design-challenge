@@ -21,3 +21,9 @@ h3 {
     text-align: center;
     color:lightskyblue;
 }
+
+ImageBorder
+{
+    border-width: 1px;
+    border-color: Black;
+}
